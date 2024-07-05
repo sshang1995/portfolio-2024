@@ -318,7 +318,7 @@ h1,h2,h3,h4,h5
         width: 100%;
         height: 100%;
         position: absolute;
-        padding-top: 60px;
+        padding-top: 10px;
         transition: all 0.4s ease-in-out;
     }
 #portfolio .portfolio-thumb:hover .portfolio-overlay
@@ -327,6 +327,11 @@ h1,h2,h3,h4,h5
         opacity: 0.8;
         transform: scale(0.9);
     }
+
+.portfolio-overlay p{
+    width:90%;
+    margin-left:5%;
+}   
 /* end portfolio */
 
 /* start contact */
