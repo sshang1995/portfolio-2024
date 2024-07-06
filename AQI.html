@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Air quality in US</title>
+  <link rel="stylesheet" type="text/css" href="AGI.css">
+</head>
+
+<body>
+  <h1>Choropleth </h1>
+  <h3>
+Median Air Quality Index(AQI) by County, 2019
+Data: <a href="https://www.epa.gov/outdoor-air-quality-data">[EPA]</a>
+</h3> 
+
+<div id="observablehq-d380c242"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@sshang1995/choropleth.js?v=3";
+const inspect = Inspector.into("#observablehq-d380c242");
+(new Runtime).module(define, name => (name === "chart") && inspect());
+</script>
+
+<table>
+  <tr>
+    <th>AQI Value</th>
+    <th>Level of Concern</th>
+  </tr>
+  <tr>
+     <td>0-50</td>
+     <td>Good</td>
+  </tr>
+  <tr>
+    <td>51-100</td>
+    <td>Moderate</td>
+  </tr>  
+  <tr>
+    <td>101-150</td>
+    <td>Unhealthy for Sensitive Groups</td>
+  </tr> 
+  <tr>
+    <td>151-200</td>
+    <td>Unhealthy</td>
+  </tr>  
+  <tr>
+    <td>201-300</td>
+    <td>Very Unhealthy</td>
+  </tr> 
+  <tr>
+    <td>301 and higher</td>
+    <td>Hazardous</td>
+  </tr>    
+
+</table>
+
+<p><a href="https://observablehq.com/@sshang1995/choropleth">Original Code</a></p>
+</body>
+
+</html>
+
+
