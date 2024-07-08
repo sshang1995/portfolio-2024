@@ -182,6 +182,7 @@ h1,h2,h3,h4,h5
         padding-bottom: 140px;
         text-align: center;
 	}
+
 #home h1
     {
         border: 2px solid #D43F52;
@@ -426,4 +427,27 @@ footer hr
     {
         color: #D43F52;
     }
+
+
+.covid{
+    width:345px;
+    height:230px;  
+}
+
+@media(max-width: 1024px){
+ #home{
+    background: url('../images/home-bg.jpg');
+    background-size:contain;
+    text-align: center;
+    background-repeat: no-repeat;
+} 
+.covid{
+    width:auto;
+    height:auto;  
+}
+.des{
+    display: none;
+}
+}
+
 /* end social icon */
