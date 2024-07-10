@@ -435,12 +435,7 @@ footer hr
 }
 
 @media(max-width: 1024px){
- #home{
-    background: url('../images/home-bg.jpg');
-    background-size:contain;
-    text-align: center;
-    background-repeat: no-repeat;
-} 
+ 
 .covid{
     width:auto;
     height:auto;  
