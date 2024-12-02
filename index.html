@@ -42,7 +42,7 @@
 					<div class="col-md-8 wow fadeIn" data-wow-delay="0.9s">
 						<!-- <h3>Simple and E</h3> -->
 						<h1>Shu Shang</h1>
-						<h2 class="rotate">FULL STACK DEVELOPER, DATABASE DEVELOPER</h2>
+						<h2 class="rotate">FULL STACK DEVELOPER, DATA ANALYST</h2>
 						<!-- <p>Full Stack Developer with 5+ years experience. Possess a strong knowledge base in cloud management, system design, database design, debugging and data analysis.</p> -->
 						<a href="#work" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="1s">Get started</a>
 					</div>
@@ -81,7 +81,7 @@
 							</div>
 							<div class="media-body">
 								<h3 class="media-heading">Frontend Development</h3>
-								<p>Angular, React, HTML, CSS, JS</p>
+								<p>Angular, React, HTML, CSS, JS/TS</p>
 							</div>
 						</div>
 					</div>
@@ -153,19 +153,31 @@
 				</div>
 				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
 					<div class="portfolio-thumb">
-						<img src="images/portfolio-img2.jpg" class="img-responsive" alt="portfolio img">
+						<img src="images/candle.jpg" class="img-responsive" alt="portfolio img">
 							<div class="portfolio-overlay">
-								<h4>Food Order App</h4>
-								<p class="des" style="color:black">A food order app for customers to order food and admins to process order.</p>
-								<p class="des" style="color:black">Tech Stack: React, Express.js, MongoDB, Node.js, Azure</p>
-								<a href="https://mango-stone-06196b30f.5.azurestaticapps.net" class="btn btn-default" target="_blank">Client</a>
-								<a href="https://happy-smoke-05167d10f.5.azurestaticapps.net/" class="btn btn-default" target="_blank">Admin</a>
+								<h4>Candle App</h4>
+								<p class="des" style="color:black">An app for customers to order candles</p>
+								<p class="des" style="color:black">Tech Stack: React, Express.js, MongoDB, Node.js, Linux, Nginx</p>
+								<a href="https://lightupcandle.com/" class="btn btn-default" target="_blank">See details</a>
+				
 							</div>
 					</div>
 				</div>
 				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
 					<div class="portfolio-thumb">
-						<img src="images/portfolio-img1.jpg" class="img-responsive" alt="portfolio img">
+						<img src="images/realestate.jpg" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay">
+								<h4>Real estate website</h4>
+								<p class="des" style="color:black">A website for real estate business</p>
+								<p class="des" style="color:black">Tech Stack: React, Azure, Motion animation, Tailwind CSS</p>
+								<a href="https://white-coast-07e7a550f.4.azurestaticapps.net/" class="btn btn-default" target="_blank">See details</a>
+				
+							</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/sales.jpeg" class="img-responsive" alt="portfolio img">
 							<div class="portfolio-overlay">
 								<h4>Sales Management System</h4>
 								<p class="des" style="color:black">A sales management portal helps you to manage customers, products and sales. </p>
@@ -177,7 +189,8 @@
 	
 				 <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
 					<div class="portfolio-thumb">
-						<img src="images/Covid-19.jpeg" class="img-responsive covid" alt="portfolio img">
+						<img src="images/Covid-19.jpeg" class="img-responsive" alt="portfolio img">
+						<!-- images/Covid-19.jpeg -->
 							<div class="portfolio-overlay">
 								<h4>Covid Data Tracker</h4>
 								<p class="des" style="color:black">Tools: PowerBI, <a style="color:aqua" href="https://github.com/datasets/covid-19">Data Source</a></p>
@@ -185,9 +198,10 @@
 							</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
 					<div class="portfolio-thumb">
-						<img src="images/portfolio-img4.jpg" class="img-responsive" alt="portfolio img">
+						<img src="images/air_quality.jpeg" class="img-responsive" alt="portfolio img">
 							<div class="portfolio-overlay">
 								<h4>Air Quality</h4>
 								<p class="des" style="color:black">Using JavaScript to create choropleth map to show air quality in different states</p>
@@ -195,9 +209,9 @@
 							</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
 					<div class="portfolio-thumb">
-						<img src="images/portfolio-img5.jpg" class="img-responsive" alt="portfolio img">
+						<img src="images/projects.jpeg" class="img-responsive" alt="portfolio img">
 							<div class="portfolio-overlay">
 								<h4>Other Projects</h4>
 								<p class="des" style="color:black">Other projects I do at my free time</p>
@@ -228,11 +242,12 @@
 						
 						
 						<!-- <form role="form" method="post" action="#"> -->
-						<form role="form">
-							<input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
-							<input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
-							<textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message"></textarea>
-							<input name="send" type="submit" class="form-control" id="send" value="SEND ME">
+						<form role="form" action="https://api.web3forms.com/submit" method="POST">
+							<input type="hidden" name="access_key" value="b13ece29-f708-4e89-84a4-ec62fc222f3b">
+							<input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
+							<input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required>
+							<textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message" required></textarea>
+							<input name="send" type="submit" class="form-control" id="send" value="SEND">
 						</form>
 					</div>
 					<div class="col-md-1 col-sm-1"></div>
